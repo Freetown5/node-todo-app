@@ -3,6 +3,7 @@ var app = express();
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 app.listen(3000, function(){
     console.log('Example app listening on port 3000!');
