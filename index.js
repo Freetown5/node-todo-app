@@ -21,7 +21,7 @@ app.post('/addtask', function(req, res) {
 
 
 app.get("/", function(req, res){
-    res.render("index", {task: task});
+    res.render("index", {task: task, complete: complete});
 });
 
 var complete = ["finish jquery"];
